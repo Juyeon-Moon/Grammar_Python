@@ -1,30 +1,15 @@
+# 문자열 메소드
+# 1. count()
+hobby = 'knitting'
+print(hobby.count('i')) # hobby에 할당된 'knitting'에 있는 i의 개수를 반환함
 
-# 1. 문자열 포맷팅
-  # 특정 문자열 안에 어떤 값을 삽입할 때 사용
-  # 문자열 포맷팅 연산자 : %
+# 2. find()
+print(hobby.find('k')) # 'knitting'에서 k의 인덱스를 찾아서 반환함.
+print(hobby.find('e')) # hobby의 값에 없는 걸 매개변수로 주면 -1을 반환
 
-# 2. 문자열 포맷 코드
- # %s : 문자열(String)
-name = "Juyeon"
-gender = "female"
-print(
-"Hi, I'm %s.\n"
-"I'm %s." %(name,gender))
+# 3.index()
+print(hobby.index('n'))
 
-# %d : 정수(Integer)
-age = 22
-height = 169
-weight = 53
-print(
-"I'm %d years old.\n"
-"height is %d cm, weight is %d kg." % (age, height, weight))
-
-# %f : 실수(Float)
-Pi = 3.1415926535
-print("Pi is %.2f." % Pi)
-
-# 위의 방법은 구버전 파이썬에서 사용하는 방법.
-
-# f문자열 포매팅
-a = f'I am {name}.'
-print(a)
+# 4.join()
+hobby = ",".join('knitting')
+print(hobby)
